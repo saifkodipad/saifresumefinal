@@ -68,7 +68,7 @@ const Hero = () => {
               <Github size={24} className="text-foreground" />
             </a>
             <a
-              href="https://linkedin.com/in/saifur-rahaman"
+              href="https://www.linkedin.com/in/kodipad-saifur-rahaman-b1611927a"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card border border-border hover:border-sakura-medium hover:bg-sakura-light transition-all duration-300"
@@ -77,7 +77,7 @@ const Hero = () => {
               <Linkedin size={24} className="text-foreground" />
             </a>
             <a
-              href="https://twitter.com/saifur"
+              href="https://x.com/saifbinkodipad"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card border border-border hover:border-sakura-medium hover:bg-sakura-light transition-all duration-300"
