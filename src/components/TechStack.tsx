@@ -1,16 +1,52 @@
 const technologies = [
-  { name: 'HTML', icon: '🌐' },
-  { name: 'CSS', icon: '🎨' },
-  { name: 'JavaScript', icon: '⚡' },
-  { name: 'React', icon: '⚛️' },
-  { name: 'Node.js', icon: '🟢' },
-  { name: 'Python', icon: '🐍' },
-  { name: 'SQL', icon: '🗃️' },
-  { name: 'MERN', icon: '📦' },
-  { name: 'TailwindCSS', icon: '💨' },
-  { name: 'Bootstrap', icon: '🅱️' },
-  { name: 'GitHub', icon: '🐙' },
-  { name: 'AWS', icon: '☁️' },
+  { 
+    name: 'HTML', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' 
+  },
+  { 
+    name: 'CSS', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' 
+  },
+  { 
+    name: 'JavaScript', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' 
+  },
+  { 
+    name: 'React', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' 
+  },
+  { 
+    name: 'Node.js', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' 
+  },
+  { 
+    name: 'Python', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' 
+  },
+  { 
+    name: 'SQL', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' 
+  },
+  { 
+    name: 'MongoDB', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' 
+  },
+  { 
+    name: 'TailwindCSS', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' 
+  },
+  { 
+    name: 'Bootstrap', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' 
+  },
+  { 
+    name: 'GitHub', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' 
+  },
+  { 
+    name: 'AWS', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg' 
+  },
 ];
 
 const TechStack = () => {
@@ -31,7 +67,11 @@ const TechStack = () => {
               className="sakura-card p-6 flex flex-col items-center gap-3 hover:scale-110 hover:sakura-glow transition-all duration-300 cursor-default animate-fadeIn"
               style={{ animationDelay: `${idx * 0.05}s` }}
             >
-              <span className="text-3xl">{tech.icon}</span>
+              <img 
+                src={tech.icon} 
+                alt={tech.name} 
+                className="w-10 h-10 object-contain"
+              />
               <span className="text-sm font-medium text-center">{tech.name}</span>
             </div>
           ))}
