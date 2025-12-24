@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Copy } from 'lucide-react';
+import { Mail, Phone, MapPin, Copy } from 'lucide-react';
 import { toast } from 'sonner';
 
 const Contact = () => {
@@ -55,39 +55,6 @@ const Contact = () => {
                   <p className="text-sm text-muted-foreground">Location</p>
                   <p className="font-medium">Hyderabad, Telangana</p>
                 </div>
-              </div>
-            </div>
-
-            <div className="mt-8 pt-6 border-t border-border">
-              <p className="text-sm text-muted-foreground text-center mb-4">Connect with me</p>
-              <div className="flex justify-center gap-4">
-                <a
-                  href="https://github.com/skodipad-hue"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-sakura-light hover:bg-sakura-medium transition-colors"
-                  aria-label="GitHub"
-                >
-                  <Github size={24} className="text-foreground" />
-                </a>
-                <a
-                  href="https://linkedin.com/in/saifur-rahaman"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-sakura-light hover:bg-sakura-medium transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin size={24} className="text-foreground" />
-                </a>
-                <a
-                  href="https://twitter.com/saifur"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-sakura-light hover:bg-sakura-medium transition-colors"
-                  aria-label="Twitter"
-                >
-                  <Twitter size={24} className="text-foreground" />
-                </a>
               </div>
             </div>
           </div>
