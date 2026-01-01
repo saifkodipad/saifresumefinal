@@ -1,5 +1,6 @@
 import { ExternalLink, Github } from 'lucide-react';
 import sakuraFeeds from '@/assets/sakura-feeds.png';
+import cyberThreads from '@/assets/cyber-threads.png';
 
 const Projects = () => {
   return (
@@ -12,7 +13,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto space-y-8">
           <div className="sakura-card overflow-hidden hover:scale-[1.02] transition-transform duration-300">
             <div className="aspect-video overflow-hidden">
               <img
@@ -38,6 +39,43 @@ const Projects = () => {
                 </a>
                 <a
                   href="https://github.com/skodipad-hue/sakura-feed"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 rounded-full font-medium border-2 border-sakura-medium text-foreground hover:bg-sakura-light transition-all duration-300 flex items-center gap-2"
+                >
+                  <Github size={18} />
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Cyber Threads Project */}
+          <div className="sakura-card overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+            <div className="aspect-video overflow-hidden">
+              <img
+                src={cyberThreads}
+                alt="Cyber Threads"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-2xl font-display font-bold mb-2">🧵 Cyber Threads</h3>
+              <p className="text-muted-foreground mb-6">
+                A lightweight full-stack social feed application where users can authenticate, create posts, view a live feed, and manage their content. Built to strengthen backend logic, authentication flow, and real-world CRUD operations with a clean, minimal UI.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="https://cyber-thread-1.onrender.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="sakura-btn flex items-center gap-2 text-foreground"
+                >
+                  <ExternalLink size={18} />
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/skodipad-hue/cyber-thread.git"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 rounded-full font-medium border-2 border-sakura-medium text-foreground hover:bg-sakura-light transition-all duration-300 flex items-center gap-2"
