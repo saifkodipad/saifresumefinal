@@ -1,17 +1,17 @@
-import li2Logo from '@/assets/li2-logo.png';
 import hexartLogo from '@/assets/hexart-logo.png';
+import li2Logo from '@/assets/li2-logo.png';
 import nxtwaveLogo from '@/assets/nxtwave-logo.svg';
 
 const experiences = [
   {
-    title: 'Outreach Manager',
+    title: 'Outreach Manager-Internship',
     company: 'Li2 Edu',
     logo: li2Logo,
     dates: 'Apr 2025 – Oct 2025',
-    description: 'Managed teams and outreach operations, maintaining active communication with customers and partners.',
+    description: 'Managed teams and outreach operations, maintaining active communication with partners.',
   },
   {
-    title: 'Associate Web Developer',
+    title: 'Web Developer-Internship',
     company: 'Hexart.in',
     logo: hexartLogo,
     dates: 'Sep 2024 – Feb 2025',
