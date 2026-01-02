@@ -1,6 +1,6 @@
-import { ExternalLink, Github } from 'lucide-react';
-import sakuraFeeds from '@/assets/sakura-feeds.png';
 import cyberThreads from '@/assets/cyber-threads.png';
+import sakuraFeeds from '@/assets/sakura-feeds.png';
+import { ExternalLink, Github } from 'lucide-react';
 
 const Projects = () => {
   return (
@@ -38,7 +38,7 @@ const Projects = () => {
                   Live Demo
                 </a>
                 <a
-                  href="https://github.com/skodipad-hue/sakura-feed"
+                  href="https://github.com/saifkodipad/sakura-feed.git"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 rounded-full font-medium border-2 border-sakura-medium text-foreground hover:bg-sakura-light transition-all duration-300 flex items-center gap-2"
@@ -75,7 +75,7 @@ const Projects = () => {
                   Live Demo
                 </a>
                 <a
-                  href="https://github.com/skodipad-hue/cyber-thread.git"
+                  href="https://github.com/saifkodipad/cyber-thread.git"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 rounded-full font-medium border-2 border-sakura-medium text-foreground hover:bg-sakura-light transition-all duration-300 flex items-center gap-2"
