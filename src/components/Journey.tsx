@@ -1,10 +1,10 @@
-import { useState, useCallback, useEffect } from 'react';
-import useEmblaCarousel from 'embla-carousel-react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 import journey1 from '@/assets/journey-1.jpg';
 import journey2 from '@/assets/journey-2.jpg';
 import journey3 from '@/assets/journey-3.png';
 import sakuraFeeds from '@/assets/sakura-feeds.png';
+import useEmblaCarousel from 'embla-carousel-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useCallback, useEffect, useState } from 'react';
 
 const journeyItems = [
   {
@@ -21,7 +21,7 @@ const journeyItems = [
   },
   {
     image: sakuraFeeds,
-    caption: 'Building Sakura Feeds — my first Sakura-themed full-stack project.',
+    caption: 'Building Sakura Feeds — my first Sakura-themed frontend project.',
   },
 ];
 
