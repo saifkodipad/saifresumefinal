@@ -1,5 +1,5 @@
-import { Github, Linkedin, Twitter, FileDown, ArrowDown } from 'lucide-react';
 import profileImage from '@/assets/profile.jpeg';
+import { ArrowDown, FileDown, Github, Linkedin, Twitter } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -81,7 +81,7 @@ const Hero = () => {
             style={{ animationDelay: '0.5s' }}
           >
             <a
-              href="https://github.com/skodipad-hue"
+              href="https://github.com/saifkodipad"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card border border-border hover:border-sakura-medium hover:bg-sakura-light transition-all duration-300"
