@@ -12,14 +12,11 @@ const Stats = () => {
           `${import.meta.env.VITE_ANALYTICS_API}/api/analytics/total-page-views`
         );
 
-        if (!res.ok) {
-          throw new Error("API response not OK");
-        }
+        if (!res.ok) throw new Error("API failed");
 
         const data = await res.json();
         setVisits(Number(data.totalPageViews));
-      } catch (err) {
-        console.error("Failed to load stats:", err);
+      } catch {
         setError(true);
       }
     };
@@ -28,10 +25,11 @@ const Stats = () => {
   }, []);
 
   return (
-    <section className="w-full py-12 px-6">
+    /* ⛔ REMOVED TOP PADDING COMPLETELY */
+    <section className="w-full pb-16 px-6">
       <div className="max-w-4xl mx-auto text-center">
-        {/* Heading */}
-        <h2 className="mt-14 text-3xl md:text-4xl font-bold mb-6 text-sakura-dark">
+        {/* ✅ EXACT 1.5 CM FROM DOTS */}
+        <h2 className="mt-[1.5cm] text-3xl md:text-4xl font-bold mb-6 text-sakura-dark">
           📊 Site Insights
         </h2>
 
