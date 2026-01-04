@@ -31,7 +31,7 @@ const Stats = () => {
     <section className="w-full py-12 px-6">
       <div className="max-w-4xl mx-auto text-center">
         {/* Heading */}
-        <h2 className="mt-1 text-3xl md:text-4xl font-bold mb-6 text-sakura-dark">
+        <h2 className="mt-14 text-3xl md:text-4xl font-bold mb-6 text-sakura-dark">
           📊 Site Insights
         </h2>
 
