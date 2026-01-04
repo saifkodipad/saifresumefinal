@@ -11,9 +11,7 @@ const Stats = () => {
         const res = await fetch(
           `${import.meta.env.VITE_ANALYTICS_API}/api/analytics/total-page-views`
         );
-
-        if (!res.ok) throw new Error("API failed");
-
+        if (!res.ok) throw new Error("API error");
         const data = await res.json();
         setVisits(Number(data.totalPageViews));
       } catch {
@@ -25,11 +23,11 @@ const Stats = () => {
   }, []);
 
   return (
-    /* ⛔ REMOVED TOP PADDING COMPLETELY */
-    <section className="w-full pb-16 px-6">
+    /* 🔥 PULL SECTION UP — THIS IS THE KEY */
+    <section className="w-full px-6 -mt-[2cm] pb-16">
       <div className="max-w-4xl mx-auto text-center">
-        {/* ✅ EXACT 1.5 CM FROM DOTS */}
-        <h2 className="mt-[1.5cm] text-3xl md:text-4xl font-bold mb-6 text-sakura-dark">
+        {/* Heading */}
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-sakura-dark">
           📊 Site Insights
         </h2>
 
