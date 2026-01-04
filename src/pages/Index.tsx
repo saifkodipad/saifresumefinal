@@ -1,13 +1,15 @@
-import { useEffect, useState } from 'react';
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
 import About from '@/components/About';
-import TechStack from '@/components/TechStack';
-import Projects from '@/components/Projects';
-import Experience from '@/components/Experience';
-import Journey from '@/components/Journey';
 import Contact from '@/components/Contact';
+import Experience from '@/components/Experience';
 import Footer from '@/components/Footer';
+import Hero from '@/components/Hero';
+import Journey from '@/components/Journey';
+import Navbar from '@/components/Navbar';
+import Projects from '@/components/Projects';
+import Stats from "@/components/Stats";
+import TechStack from '@/components/TechStack';
+import { useEffect, useState } from 'react';
+
 
 const Index = () => {
   const [loading, setLoading] = useState(true);
@@ -37,6 +39,7 @@ const Index = () => {
       <Projects />
       <Experience />
       <Journey />
+      <Stats/>
       <Contact />
       <Footer />
     </div>
