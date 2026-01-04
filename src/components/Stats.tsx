@@ -24,7 +24,7 @@ const Stats = () => {
 
   return (
     /* 🔥 PULL SECTION UP — THIS IS THE KEY */
-    <section className="w-full px-6 -mt-[1cm] pb-16">
+    <section className="w-full px-6 -mt-[1.3cm] pb-16">
       <div className="max-w-4xl mx-auto text-center">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-sakura-dark">
