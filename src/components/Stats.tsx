@@ -61,8 +61,8 @@ const Stats = () => {
                 {error
                   ? "—"
                   : visits !== null
-                  ? 70 + visits.toLocaleString()
-                  : "70+"}
+                  ? (40 + visits).toLocaleString()
+                  : "50+"}
               </p>
 
               <p className="text-xs text-muted-foreground mt-2">
