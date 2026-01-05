@@ -1,17 +1,19 @@
-import { Mail, Phone, MapPin, Copy } from 'lucide-react';
-import { toast } from 'sonner';
+import { Mail, Phone, MapPin, Copy } from "lucide-react";
+import { toast } from "sonner";
 
 const Contact = () => {
   const copyEmail = () => {
-    navigator.clipboard.writeText('rahamansaif029@gmail.com');
-    toast.success('Email copied to clipboard!');
+    navigator.clipboard.writeText("rahamansaif029@gmail.com");
+    toast.success("Email copied to clipboard!");
   };
 
   return (
     <section id="contact" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Get in Touch</h2>
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
+            Get in Touch
+          </h2>
           <p className="text-muted-foreground text-lg">
             Let's connect and create something amazing.
           </p>
@@ -20,25 +22,32 @@ const Contact = () => {
         <div className="max-w-xl mx-auto">
           <div className="sakura-card p-8">
             <div className="space-y-6">
+              {/* Email */}
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-full bg-sakura-light">
+                <div className="p-3 rounded-full bg-sakura-light shrink-0">
                   <Mail size={24} className="text-sakura-dark" />
                 </div>
-                <div className="flex-1">
+
+                <div className="flex-1 min-w-0">
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="font-medium">rahamansaif029@gmail.com</p>
+                  <p className="font-medium break-all">
+                    rahamansaif029@gmail.com
+                  </p>
                 </div>
+
+                {/* COPY ICON — hidden on mobile */}
                 <button
                   onClick={copyEmail}
-                  className="p-2 rounded-full hover:bg-sakura-light transition-colors"
+                  className="hidden sm:flex p-2 rounded-full hover:bg-sakura-light transition-colors"
                   aria-label="Copy email"
                 >
                   <Copy size={20} className="text-muted-foreground" />
                 </button>
               </div>
 
+              {/* Phone */}
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-full bg-sakura-light">
+                <div className="p-3 rounded-full bg-sakura-light shrink-0">
                   <Phone size={24} className="text-sakura-dark" />
                 </div>
                 <div>
@@ -47,8 +56,9 @@ const Contact = () => {
                 </div>
               </div>
 
+              {/* Location */}
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-full bg-sakura-light">
+                <div className="p-3 rounded-full bg-sakura-light shrink-0">
                   <MapPin size={24} className="text-sakura-dark" />
                 </div>
                 <div>
