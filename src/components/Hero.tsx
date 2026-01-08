@@ -9,7 +9,7 @@ const Hero = () => {
     >
       <div className="container mx-auto px-6 py-16">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
-          
+
           {/* Profile Image */}
           <div className="mb-8 animate-fadeIn">
             <div className="relative">
@@ -24,7 +24,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* ✅ SEO-OPTIMIZED MAIN HEADING */}
+          {/* Main Heading */}
           <h1
             className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-4 animate-fadeIn"
             style={{ animationDelay: '0.1s' }}
@@ -32,7 +32,7 @@ const Hero = () => {
             Saif Kodipad | Full Stack Developer | MERN | Hyderabad
           </h1>
 
-          {/* Supporting Tagline (visual, not SEO-critical) */}
+          {/* Tagline */}
           <p
             className="text-lg md:text-xl text-sakura-dark font-medium mb-8 animate-fadeIn"
             style={{ animationDelay: '0.2s' }}
@@ -40,7 +40,7 @@ const Hero = () => {
             Code. Play. Repeat.
           </p>
 
-          {/* About Paragraph */}
+          {/* About */}
           <div
             className="text-muted-foreground text-base md:text-lg leading-relaxed mb-10 space-y-4 animate-fadeIn"
             style={{ animationDelay: '0.3s' }}
@@ -58,8 +58,9 @@ const Hero = () => {
             className="flex flex-wrap justify-center gap-4 mb-10 animate-fadeIn"
             style={{ animationDelay: '0.4s' }}
           >
+            {/* ✅ FINAL RESUME LINK */}
             <a
-              href="/resume.pdf"
+              href="/Saif_Technical_Resume.pdf"
               download="Saif_Kodipad_Resume.pdf"
               className="sakura-btn flex items-center gap-2 text-foreground"
             >
@@ -115,6 +116,7 @@ const Hero = () => {
           <div className="mt-16 animate-bounce">
             <ArrowDown size={28} className="text-muted-foreground" />
           </div>
+
         </div>
       </div>
     </section>
