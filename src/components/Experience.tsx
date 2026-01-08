@@ -8,14 +8,14 @@ const experiences = [
     company: 'Li2 Edu',
     logo: li2Logo,
     dates: 'Apr 2025 – Oct 2025',
-    description: 'Managed teams and outreach operations, maintaining active communication with partners.',
+    description: 'Established and managed partnerships with colleges, acting as the primary bridge between academic institutions and the company.',
   },
   {
     title: 'Web Developer-Internship',
     company: 'Hexart.in',
     logo: hexartLogo,
     dates: 'Sep 2024 – Feb 2025',
-    description: 'Worked on web development projects and conducted on-site seminars.',
+    description: 'Worked on web development projects while learning and applying the MERN stack.',
   },
   {
     title: 'Teaching Assistant / Trainee',
