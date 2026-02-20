@@ -60,8 +60,8 @@ const Hero = () => {
           >
             {/* ✅ FINAL RESUME LINK */}
             <a
-              href="/Saif_Technical_Resume.pdf"
-              download="Saif_Kodipad_Resume.pdf"
+              href="/Saif's_Job_Resume.pdf"
+              download="Saif's_Job_Resume.pdf"
               className="sakura-btn flex items-center gap-2 text-foreground"
             >
               <FileDown size={20} />
