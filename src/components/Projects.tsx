@@ -124,7 +124,7 @@ const Projects = () => {
       <div className="p-5 flex-1 flex flex-col">
         <h3 className="text-xl font-display font-bold mb-2">Stay Finder</h3>
         <p className="text-muted-foreground text-sm mb-4 flex-1 leading-relaxed">
-          People can book their stays through this platform and also host their properties here.
+        A full-stack double-sided marketplace where travelers can book unique stays and hosts can list their properties. Features secure authentication, host dashboards, admin controls, and real-time property management
         </p>
         <div className="flex flex-wrap gap-3 mt-auto">
           <a
