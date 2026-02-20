@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Copy } from "lucide-react";
+import { Copy, Mail, MapPin, Phone } from "lucide-react";
 import { toast } from "sonner";
 
 const Contact = () => {
