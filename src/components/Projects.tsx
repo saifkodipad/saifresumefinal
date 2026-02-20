@@ -1,6 +1,6 @@
 import cyberThreads from '@/assets/cyber-threads.png';
 import sakuraFeeds from '@/assets/sakura-feeds.png';
-import stayFinder from '@/assets/stay-finder.png'; // Add this image
+import stayFinder from '@/assets/stay-finder.png';
 import { ExternalLink, Github } from 'lucide-react';
 import { useState } from 'react';
 
@@ -40,50 +40,50 @@ const Projects = () => {
   const displayedProjects = showAll ? projects : projects.slice(0, 3);
 
   return (
-    <section id="projects" className="py-20 bg-background">
+    <section id="projects" className="py-16 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Projects</h2>
-          <p className="text-muted-foreground text-lg">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-3">Projects</h2>
+          <p className="text-muted-foreground text-base">
             Featured work that showcases my skills.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-7xl mx-auto">
           {displayedProjects.map((project) => (
             <div 
               key={project.id} 
-              className="sakura-card overflow-hidden hover:scale-[1.02] transition-transform duration-300 h-full flex flex-col"
+              className="sakura-card overflow-hidden hover:scale-[1.02] transition-transform duration-300 h-full flex flex-col rounded-lg"
             >
-              <div className="aspect-video overflow-hidden">
+              <div className="aspect-video overflow-hidden bg-gray-100">
                 <img
                   src={project.image}
                   alt={project.alt}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-2xl font-display font-bold mb-2">{project.title}</h3>
-                <p className="text-muted-foreground mb-6 flex-1">
+              <div className="p-4 flex-1 flex flex-col">
+                <h3 className="text-xl font-display font-bold mb-2">{project.title}</h3>
+                <p className="text-muted-foreground text-sm mb-4 flex-1 line-clamp-3">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-3 mt-auto">
                   <a
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="sakura-btn flex items-center gap-2 text-foreground"
+                    className="sakura-btn flex items-center gap-2 text-foreground text-sm px-4 py-2"
                   >
-                    <ExternalLink size={18} />
+                    <ExternalLink size={16} />
                     Live Demo
                   </a>
                   <a
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3 rounded-full font-medium border-2 border-sakura-medium text-foreground hover:bg-sakura-light transition-all duration-300 flex items-center gap-2"
+                    className="px-4 py-2 rounded-full font-medium border-2 border-sakura-medium text-foreground hover:bg-sakura-light transition-all duration-300 flex items-center gap-2 text-sm"
                   >
-                    <Github size={18} />
+                    <Github size={16} />
                     GitHub
                   </a>
                 </div>
@@ -93,10 +93,10 @@ const Projects = () => {
         </div>
 
         {projects.length > 3 && (
-          <div className="text-center mt-10">
+          <div className="text-center mt-8">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="px-8 py-3 rounded-full font-medium border-2 border-sakura-medium text-foreground hover:bg-sakura-light transition-all duration-300 inline-flex items-center gap-2"
+              className="px-6 py-2.5 rounded-full font-medium border-2 border-sakura-medium text-foreground hover:bg-sakura-light transition-all duration-300 inline-flex items-center gap-2 text-sm"
             >
               {showAll ? 'Show Less' : 'More Projects'}
             </button>
