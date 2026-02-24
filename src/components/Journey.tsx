@@ -32,6 +32,7 @@ const Journey = () => {
     skipSnaps: false,
   });
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [loadedImages, setLoadedImages] = useState<boolean[]>(new Array(journeyItems.length).fill(false));
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -58,6 +59,14 @@ const Journey = () => {
       emblaApi.off('select', onSelect);
     };
   }, [emblaApi, onSelect]);
+
+  const handleImageLoad = (index: number) => {
+    setLoadedImages(prev => {
+      const newState = [...prev];
+      newState[index] = true;
+      return newState;
+    });
+  };
 
   return (
     <section id="journey" className="py-20 bg-background overflow-hidden">
@@ -111,7 +120,17 @@ const Journey = () => {
                       <img
                         src={item.image}
                         alt={item.caption}
-                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                        width={1200}
+                        height={675}
+                        className={`w-full h-full object-cover transition-all duration-500 hover:scale-105 ${
+                          loadedImages[idx] ? 'opacity-100' : 'opacity-0'
+                        }`}
+                        style={{
+                          filter: 'contrast(1.08) brightness(1.02) saturate(1.02)',
+                          transform: 'scale(1.02)',
+                        }}
+                        loading="lazy"
+                        onLoad={() => handleImageLoad(idx)}
                       />
                     </div>
                     <div className="p-4 text-center">

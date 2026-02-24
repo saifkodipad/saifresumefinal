@@ -42,14 +42,17 @@ const Projects = () => {
 
   const displayedProjects = showAll ? projects : projects.slice(0, 3);
 
-  // Sakura Feeds HTML
+  // Sakura Feeds HTML - FIXED with proper image dimensions
   const sakuraFeedsHTML = (
     <div className="sakura-card overflow-hidden hover:scale-[1.02] transition-transform duration-300 h-full flex flex-col rounded-xl border border-sakura-light/20">
       <div className="h-36 overflow-hidden bg-gray-100">
         <img
           src={sakuraFeeds}
           alt="Sakura Feeds"
+          width={400}
+          height={225}
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          loading="lazy"
         />
       </div>
       <div className="p-5 flex-1 flex flex-col">
@@ -81,14 +84,17 @@ const Projects = () => {
     </div>
   );
 
-  // Cyber Threads HTML (without Live Demo)
+  // Cyber Threads HTML - FIXED with proper image dimensions
   const cyberThreadsHTML = (
     <div className="sakura-card overflow-hidden hover:scale-[1.02] transition-transform duration-300 h-full flex flex-col rounded-xl border border-sakura-light/20">
       <div className="h-36 overflow-hidden bg-gray-100">
         <img
           src={cyberThreads}
           alt="Cyber Threads"
+          width={400}
+          height={225}
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          loading="lazy"
         />
       </div>
       <div className="p-5 flex-1 flex flex-col">
@@ -111,14 +117,17 @@ const Projects = () => {
     </div>
   );
 
-  // Stay Finder HTML
+  // Stay Finder HTML - FIXED with proper image dimensions
   const stayFinderHTML = (
     <div className="sakura-card overflow-hidden hover:scale-[1.02] transition-transform duration-300 h-full flex flex-col rounded-xl border border-sakura-light/20">
       <div className="h-36 overflow-hidden bg-gray-100">
         <img
           src={stayFinder}
           alt="Stay Finder"
+          width={400}
+          height={225}
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          loading="lazy"
         />
       </div>
       <div className="p-5 flex-1 flex flex-col">

@@ -1,7 +1,19 @@
 import profileImage from '@/assets/profile.jpeg';
 import { ArrowDown, FileDown, Github, Linkedin, Twitter } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
 
 const Hero = () => {
+  const imgRef = useRef<HTMLImageElement>(null);
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    // Force image reload with cache buster
+    if (imgRef.current) {
+      const src = imgRef.current.src.split('?')[0];
+      imgRef.current.src = src + '?t=' + Date.now();
+    }
+  }, []);
+
   return (
     <section
       id="home"
@@ -10,14 +22,24 @@ const Hero = () => {
       <div className="container mx-auto px-6 py-16">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
 
-          {/* Profile Image */}
+          {/* Profile Image - FINAL FIX */}
           <div className="mb-8 animate-fadeIn">
             <div className="relative">
               <div className="w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden sakura-glow float-animation">
                 <img
+                  ref={imgRef}
                   src={profileImage}
                   alt="Saif Kodipad - Full Stack Developer"
-                  className="w-full h-full object-cover"
+                  width={300}
+                  height={300}
+                  className={`w-full h-full object-cover transition-opacity duration-300 ${
+                    imageLoaded ? 'opacity-100' : 'opacity-0'
+                  }`}
+                  style={{
+                    transform: 'scale(1.02)',
+                    filter: 'contrast(1.08) brightness(1.02) blur(0.2px)',
+                  }}
+                  onLoad={() => setImageLoaded(true)}
                 />
               </div>
               <div className="absolute inset-0 rounded-full border-2 border-sakura-medium/30 animate-pulse"></div>
@@ -58,7 +80,6 @@ const Hero = () => {
             className="flex flex-wrap justify-center gap-4 mb-10 animate-fadeIn"
             style={{ animationDelay: '0.4s' }}
           >
-            {/* ✅ FINAL RESUME LINK */}
             <a
               href="/Saif's_Job_Resume.pdf"
               download="Saif's_Job_Resume.pdf"

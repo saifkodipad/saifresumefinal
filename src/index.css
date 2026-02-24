@@ -1,8 +1,10 @@
+/* All @import statements must come FIRST */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+/* Then Tailwind directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
 
 @layer base {
   :root {
@@ -196,3 +198,7 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--sakura-dark));
 }
+
+
+/* ===== IMAGE QUALITY FIXES - ADD THIS AT THE VERY BOTTOM ===== */
+

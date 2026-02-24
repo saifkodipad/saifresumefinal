@@ -13,4 +13,15 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        assetFileNames: "assets/[name].[hash][extname]",
+      },
+    },
+    assetsInlineLimit: 0, // Changed from 4096 to 0 to prevent inlining
+  },
+  optimizeDeps: {
+    include: ["react", "react-dom"],
+  },
 });
