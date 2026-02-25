@@ -1,4 +1,4 @@
-import { Code, Coffee, Moon, Flame, Clock, Layers, Dribbble } from 'lucide-react';
+import { Clock, Code, Coffee, Dribbble, Flame, Layers, Moon } from 'lucide-react';
 
 const aboutParagraphs = [
   "Hi there! I'm Saif, a passionate Full Stack Web Developer who believes in the power of clean code and thoughtful design. While I'm still early in my professional journey, I've poured countless hours into learning, building, and refining my craft.",
