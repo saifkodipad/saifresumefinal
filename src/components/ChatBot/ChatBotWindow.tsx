@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { X, Send, Minimize2, Maximize2, Bot } from 'lucide-react';
+import { Bot, Maximize2, Minimize2, Send, X } from 'lucide-react';
+import React, { useEffect, useRef, useState } from 'react';
+import { chatService } from './chatService';
 import MessageBubble from './MessageBubble';
 import { Message } from './types';
-import { chatService } from './chatService';
 
 interface ChatBotWindowProps {
   onClose: () => void;
