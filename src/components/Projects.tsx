@@ -10,12 +10,12 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Sakura Feeds",
-      description: "A Sakura-themed content-sharing web platform with a clean UI and smooth user flow. Built with modern web technologies for an elegant user experience.",
-      image: sakuraFeeds,
-      liveUrl: "https://sakura-feed.onrender.com/posts",
-      githubUrl: "https://github.com/saifkodipad/sakura-feed.git",
-      alt: "Sakura Feeds",
+      title: "Stay Finder",
+      description: "A full-stack double-sided marketplace where travelers can book unique stays and hosts can list their properties. Features secure authentication, host dashboards, admin controls, and real-time property management",
+      image: stayFinder,
+      liveUrl: "https://stayfinder-axni.onrender.com/",
+      githubUrl: "https://github.com/saifkodipad/StayFinder",
+      alt: "Stay Finder",
       showLiveDemo: true
     },
     {
@@ -30,25 +30,25 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Stay Finder",
-      description: "People can book their stays through this platform and also host their properties here.",
-      image: stayFinder,
-      liveUrl: "https://stayfinder-axni.onrender.com/",
-      githubUrl: "https://github.com/saifkodipad/StayFinder",
-      alt: "Stay Finder",
+      title: "Sakura Feeds",
+      description: "A Sakura-themed content-sharing web platform with a clean UI and smooth user flow. Built with modern web technologies for an elegant user experience.",
+      image: sakuraFeeds,
+      liveUrl: "https://sakura-feed.onrender.com/posts",
+      githubUrl: "https://github.com/saifkodipad/sakura-feed.git",
+      alt: "Sakura Feeds",
       showLiveDemo: true
     }
   ];
 
   const displayedProjects = showAll ? projects : projects.slice(0, 3);
 
-  // Sakura Feeds HTML - FIXED with proper image dimensions
-  const sakuraFeedsHTML = (
+  // Stay Finder HTML - FIXED with proper image dimensions
+  const stayFinderHTML = (
     <div className="sakura-card overflow-hidden hover:scale-[1.02] transition-transform duration-300 h-full flex flex-col rounded-xl border border-sakura-light/20">
       <div className="h-36 overflow-hidden bg-gray-100">
         <img
-          src={sakuraFeeds}
-          alt="Sakura Feeds"
+          src={stayFinder}
+          alt="Stay Finder"
           width={400}
           height={225}
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
@@ -56,13 +56,13 @@ const Projects = () => {
         />
       </div>
       <div className="p-5 flex-1 flex flex-col">
-        <h3 className="text-xl font-display font-bold mb-2">Sakura Feeds</h3>
+        <h3 className="text-xl font-display font-bold mb-2">Stay Finder</h3>
         <p className="text-muted-foreground text-sm mb-4 flex-1 leading-relaxed">
-          A Sakura-themed content-sharing web platform with a clean UI and smooth user flow. Built with modern web technologies for an elegant user experience.
+          A full-stack double-sided marketplace where travelers can book unique stays and hosts can list their properties. Features secure authentication, host dashboards, admin controls, and real-time property management
         </p>
         <div className="flex flex-wrap gap-3 mt-auto">
           <a
-            href="https://sakura-feed.onrender.com/posts"
+            href="https://stayfinder-axni.onrender.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="sakura-btn flex items-center gap-2 text-foreground text-sm px-4 py-2 rounded-full"
@@ -71,7 +71,7 @@ const Projects = () => {
             Live Demo
           </a>
           <a
-            href="https://github.com/saifkodipad/sakura-feed.git"
+            href="https://github.com/saifkodipad/StayFinder"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 rounded-full font-medium border-2 border-sakura-medium text-foreground hover:bg-sakura-light transition-all duration-300 flex items-center gap-2 text-sm"
@@ -117,13 +117,13 @@ const Projects = () => {
     </div>
   );
 
-  // Stay Finder HTML - FIXED with proper image dimensions
-  const stayFinderHTML = (
+  // Sakura Feeds HTML - FIXED with proper image dimensions
+  const sakuraFeedsHTML = (
     <div className="sakura-card overflow-hidden hover:scale-[1.02] transition-transform duration-300 h-full flex flex-col rounded-xl border border-sakura-light/20">
       <div className="h-36 overflow-hidden bg-gray-100">
         <img
-          src={stayFinder}
-          alt="Stay Finder"
+          src={sakuraFeeds}
+          alt="Sakura Feeds"
           width={400}
           height={225}
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
@@ -131,13 +131,13 @@ const Projects = () => {
         />
       </div>
       <div className="p-5 flex-1 flex flex-col">
-        <h3 className="text-xl font-display font-bold mb-2">Stay Finder</h3>
+        <h3 className="text-xl font-display font-bold mb-2">Sakura Feeds</h3>
         <p className="text-muted-foreground text-sm mb-4 flex-1 leading-relaxed">
-        A full-stack double-sided marketplace where travelers can book unique stays and hosts can list their properties. Features secure authentication, host dashboards, admin controls, and real-time property management
+          A Sakura-themed content-sharing web platform with a clean UI and smooth user flow. Built with modern web technologies for an elegant user experience.
         </p>
         <div className="flex flex-wrap gap-3 mt-auto">
           <a
-            href="https://stayfinder-axni.onrender.com/"
+            href="https://sakura-feed.onrender.com/posts"
             target="_blank"
             rel="noopener noreferrer"
             className="sakura-btn flex items-center gap-2 text-foreground text-sm px-4 py-2 rounded-full"
@@ -146,7 +146,7 @@ const Projects = () => {
             Live Demo
           </a>
           <a
-            href="https://github.com/saifkodipad/StayFinder"
+            href="https://github.com/saifkodipad/sakura-feed.git"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 rounded-full font-medium border-2 border-sakura-medium text-foreground hover:bg-sakura-light transition-all duration-300 flex items-center gap-2 text-sm"
@@ -170,14 +170,14 @@ const Projects = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {/* Sakura Feeds */}
-          {sakuraFeedsHTML}
+          {/* Stay Finder - First */}
+          {stayFinderHTML}
 
-          {/* Cyber Threads */}
+          {/* Cyber Threads - Second */}
           {cyberThreadsHTML}
 
-          {/* Stay Finder */}
-          {stayFinderHTML}
+          {/* Sakura Feeds - Third */}
+          {sakuraFeedsHTML}
         </div>
 
         {projects.length > 3 && (
